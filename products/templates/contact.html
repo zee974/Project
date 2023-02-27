@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<img src="/static/contact.jfif" alt="" width="100%" class="img-fluid object-fit-cover border rounded">
+<div class="container my-4">
+<span><h1 class="">Contect Us</h1></span>
+  <p>Questions? Don’t hesitate to ask. Leave a message for us down below or call us directly. We will answer your question as quickly as possible.</p>
+</div>
+<div class="container mx-auto my-4 p-0 active border-round row shadow mb-6 bg-white rounded" style="width:800px; height:500px;">
+  <div class="col-sm-8 p-4">
+    <form>
+      <h3>Send us a massage</h3>
+        <div class="mb-3 d-flex flex-row gap-2">
+          <!-- <label for="fname" class="form-label">First Name:</label> -->
+          <input type="text" class="form-control" id="quiery" placeholder="First Name">
+          
+          <!-- <label for="lname" class="form-label">Last Name:</label> -->
+          <input type="text" class="form-control" id="quiery" placeholder="Last Name">
+        </div>
+        <div class="mb-3 d-flex flex-row gap-2">
+          <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+          <input type="text" class="form-control" id="quiery" placeholder="Phone No">
+        </div>
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <div class="mb-3">
+          
+          <textarea type="textarea" class="form-control my-3" id="quiery" placeholder="Message"></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" style="float:right;">Send</button>
+    </form>
+  </div>
+  <div class="col-sm-4 bg-info bg-gradient p-4 text-white fw-semibold">
+    <h2>Info</h2><br>
+    
+    <p>Solar Solution</p>
+    <p>+92XXXXXXXXXX</p>
+    <P>zeeshan@solarsolution.com</P>
+    <p>G-11 St-XXX</p>
+    <p>Islamabad</p>
+    <p>440000</p>
+  </div>
+</div>
+{% endblock body %}
